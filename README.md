@@ -1,2 +1,1 @@
-# javascript_evolution
-## Hello World
+# Hello World

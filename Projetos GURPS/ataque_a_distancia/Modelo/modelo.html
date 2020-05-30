@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataque à distância</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calcule seu modificador <br />
+            de Ataque à Distância:
+        </h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Distância em metros: <br />
+                <input type="number" name="dist" id="dist">
+            </p>
+            <p>
+                Modificador de Tamanho: <br />
+                <input type="number" name="mdt" id="mdt">
+            </p>
+            <p>
+                Ponto de Impacto: <br />
+                <!-- select e option para caixa com lista de itens -->
+                <select name="pdi" id="pdi">
+                    <option value="tronco">Tronco</option>
+                    <option value="cranio">Crânio</option>
+                    <option value="rosto">Rosto</option>
+                    <option value="pd">Perna Direita</option>
+                    <option value="bd">Braço Direito</option>
+                    <option value="olho">Olho</option>
+                    <option value="virilha">Virilha</option>
+                    <option value="be">Braço Esquerdo</option>
+                    <option value="pe">Perna Esquerda</option>
+                    <option value="mao">Mão</option>
+                    <option value="pe">Pé</option>
+                    <option value="pescoco">Pescoço</option>
+                    <option value="ov">Órgãos Vitais</option>
+                </select>
+            </p>
+            <p>
+                <input type="button" value="Calcular">
+            </p>
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+    <footer>
+        <p>3d6 power!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

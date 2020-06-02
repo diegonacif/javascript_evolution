@@ -16,11 +16,15 @@
         <div>
             <p>
                 Distância em metros: <br />
-                <input type="number" name="dist" id="dist">
+                <input type="number" name="dist" id="dist" class="inumber" step="0.01">
             </p>
             <p>
-                Modificador de Tamanho: <br />
-                <input type="number" name="mdt" id="mdt">
+                Tamanho do alvo em metros: <br />
+                <input type="number" name="mdt" id="mdt" class="inumber" step="0.01">
+            </p>
+            <p>
+                Outros modificadores: <br />
+                <input type="number" name="oms" id="oms" class="inumber">
             </p>
             <p>
                 Ponto de Impacto: <br />
@@ -42,11 +46,11 @@
                 </select>
             </p>
             <p>
-                <input type="button" value="Calcular">
+                <input type="button" value="Calcular" onclick="calcular()">
             </p>
         </div>
-        <div id="res">
-
+        <div id="res" class='res'>
+                Insira os dados e arroxe o Calcular...
         </div>
     </section>
     <footer>

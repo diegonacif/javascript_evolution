@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolador de Dados</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Rolador de Dados</h1>
+    </header>
+    <section>
+        <div class="udata">
+            <p>Rolamento:&nbsp;&nbsp; <input type="text" placeholder="/r 3d6" name="" id="roll" class="inp" maxlength="20"></p>
+
+            <input type="button" value="Rolar!" onclick="rolar()">
+        </div>
+        <div id="res" class="res">
+
+        </div>
+    </section>
+    <footer>
+        <p>3d6 power!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

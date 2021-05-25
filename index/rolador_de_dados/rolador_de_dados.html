@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolador de Dados</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Rolador de Dados</h1>
+    </header>
+    <section>
+        <div class="udata">
+            <p>Número de Rolamentos:&nbsp;&nbsp; <input type="number" value="1" name="" id="rquantity" class="inp"></p>
+
+            <p>Rolamento:&nbsp;&nbsp; <input type="number" value="1" name="" id="dquantity" class="inp"> D 
+            <input type="number" value="6" name="" id="dnumber" class="inp"><br />EX: 3D6</p>
+
+            <p>Modificador: &nbsp;<input type="number" name="mod" id="mod" class="inp">&nbsp;&nbsp;</p>
+
+            <input type="button" value="Rolar!" onclick="rolar()">
+        </div>
+        <div id="res" class="res">
+
+        </div>
+    </section>
+    <footer>
+        <p>3d6 power!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

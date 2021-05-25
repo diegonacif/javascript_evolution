@@ -18,8 +18,11 @@ function rolar() {
         for(var c = 1; c <= ndquant; c++) {
             var resf = Math.ceil(Math.random()*max)
             arr.push(resf)
+            var arrsum = arr.reduce(function(arrsum,PartSum){
+                return arrsum + PartSum;
+            },0);
         
-            res.innerHTML = `${arr}`
+            res.innerHTML = `${arrsum} (${arr[0]}, ${arr[1]}, ${arr[2]})`
         
         }
 
